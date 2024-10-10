@@ -11,7 +11,7 @@ However, these user simulators struggle to model the rules behind how dialogues 
 In this paper, we propose to explicitly capture the complex rules to help the user simulator pose diverse and in-depth instruction. 
 Specifically, we first induce high-level instruction strategies from various real instruction dialogues serving as rules. 
 Afterward, different possible strategies are applied to the newly given dialogue scenario deductively to pose various instructions. 
-Experimental results show that our method can generate diverse and in-depth instructions. The constructed multi-turn instructional dialogues can outperform competitive baselines on the downstream chat model。
+Experimental results show that our method can generate diverse and in-depth instructions. The constructed multi-turn instructional dialogues can outperform competitive baselines on the downstream chat model.
 
 ## Architecture
 ![alt Arcitacture](./images/architecture.png)
