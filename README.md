@@ -1,4 +1,4 @@
-# Inductive-Deductive Strategy Reuse for Multi-Turn Instructional Dialogues
+# [EMNLP2024 Main Conference]Inductive-Deductive Strategy Reuse for Multi-Turn Instructional Dialogues
 
 This project includes the data and code for paper[📄Inductive-Deductive Strategy Reuse for Multi-Turn Instructional Dialogues](https://arxiv.org/pdf/2404.11095.pdf)
 
