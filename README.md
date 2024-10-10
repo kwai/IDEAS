@@ -5,13 +5,13 @@ This project includes the data and code for paper[📄Inductive-Deductive Strate
 ----------
 
 ## Abstract
-Aligning large language models (LLMs) with human expectations requires high-quality instructional dialogues, which can be achieved by raising diverse, in-depth, and insightful instructions that deepen interactions.
-Existing methods target instructions from real instruction dialogues as a learning goal and fine-tune a user simulator for posing instructions.
-However, the user simulator struggles to implicitly model complex dialogue flows and pose high-quality instructions.
-In this paper, we take inspiration from the cognitive abilities inherent in human learning and propose the explicit modeling of complex dialogue flows through instructional strategy reuse.
-Specifically, we first induce high-level strategies from various real instruction dialogues.
-These strategies are applied to new dialogue scenarios deductively, where the instructional strategies facilitate high-quality instructions.
-Experimental results show that our method can generate diverse, in-depth, and insightful instructions for a given dialogue history. The constructed multi-turn instructional dialogues can outperform competitive baselines on the downstream chat model.
+Aligning large language models (LLMs) with human expectations requires high-quality instructional dialogues, which usually require instructions that are diverse and in-depth. 
+Existing methods leverage two LLMs to interact for automatic collection: one simulating a user to pose instructions, and the other acting as a system agent to respond. 
+However, these user simulators struggle to model the rules behind how dialogues can pose different instructions without explicit guidance, resulting in general instructions. 
+In this paper, we propose to explicitly capture the complex rules to help the user simulator pose diverse and in-depth instruction. 
+Specifically, we first induce high-level instruction strategies from various real instruction dialogues serving as rules. 
+Afterward, different possible strategies are applied to the newly given dialogue scenario deductively to pose various instructions. 
+Experimental results show that our method can generate diverse and in-depth instructions. The constructed multi-turn instructional dialogues can outperform competitive baselines on the downstream chat model。
 
 ## Architecture
 ![alt Arcitacture](./images/architecture.png)
